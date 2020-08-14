@@ -2,14 +2,16 @@
   text-align: center;
 }
 
-.App-logo {
+svg {
+  width: 40vmin;
   height: 40vmin;
   pointer-events: none;
+  fill: red;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  svg {
+    animation: App-logo-spin infinite 3s ease-in-out alternate;
   }
 }
 
