@@ -1,7 +1,11 @@
 import React from "react";
+
+import { HelloWorld } from "../../../models";
+
 import "./styles.css";
 
 function App() {
+  console.log(new HelloWorld());
   return (
     <div className="App">
       <header className="App-header">
