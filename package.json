@@ -1,7 +1,8 @@
 {
   "name": "zs-webui-template",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "private": true,
+  "description": "Boilerplate React / Redux web application ui",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -19,7 +20,10 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "stacktrace-js": "^2.0.2"
+    "stacktrace-js": "^2.0.2",
+    "uuid": "^8.3.0",
+    "uuid62": "^1.0.1",
+    "zs-common": "github:zamphear/zs-common#v0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
