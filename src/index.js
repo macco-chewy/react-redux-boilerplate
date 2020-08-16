@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import 'normalize.css';
-import './styles/base.css';
+import 'styles/base.css';
 
-import App from './view/apps/Default';
+import App from 'apps/Default';
 
 require('zs-common/dist/index.js');
 

@@ -3,10 +3,10 @@ import { Provider } from 'react-redux';
 import { Route, Redirect, Switch } from 'react-router';
 import { ConnectedRouter } from 'connected-react-router';
 
-import { store, history } from '../../../store';
+import { store, history } from 'store';
 
-import StandardLayout from '../../../view/layouts/StandardLayout';
-import Home from '../../../view/pages/Home';
+import StandardLayout from 'layouts/StandardLayout';
+import Home from 'pages/Home';
 
 export default class App extends Component {
   render() {

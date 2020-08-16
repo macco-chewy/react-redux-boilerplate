@@ -1,7 +1,5 @@
 import { submitUser } from 'libs/api';
-
 import { clear as clearUser } from 'actions/user/get';
-import { get as getAllUsers } from 'actions/users/collection';
 
 export const REQUEST_CREATE_USER = 'REQUEST_CREATE_USER';
 export const FAIL_CREATE_USER = 'FAIL_CREATE_USER';
@@ -32,7 +30,6 @@ export function submit(data) {
         dispatch(failCreateUser(error));
       } else {
         dispatch(resolveCreateUser(user));
-        dispatch(getAllUsers());
       }
     });
   };

@@ -1,5 +1,4 @@
 import { RESOLVE_CREATE_USER, FAIL_CREATE_USER } from 'actions/user/create';
-
 import { RESOLVE_GET_USER, CLEAR_USER } from 'actions/user/get';
 
 export function user(state = null, action) {

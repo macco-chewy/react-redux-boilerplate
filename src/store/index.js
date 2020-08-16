@@ -4,7 +4,7 @@ import { createLogger } from 'redux-logger';
 import { createBrowserHistory } from 'history';
 import { routerMiddleware } from 'connected-react-router';
 
-import createRootReducer from '../reducers';
+import createRootReducer from 'reducers';
 
 const loggerMiddleware = createLogger();
 
@@ -18,7 +18,7 @@ export default function configureStore(preloadedState) {
   const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
   const middleware = [
     thunkMiddleware,
-    ...(['dev', 'local', 'test'].find((e) => e === process.env.NODE_ENV)
+    ...(['development', 'local', 'test'].find((e) => e === process.env.NODE_ENV)
       ? [loggerMiddleware]
       : []),
   ];
