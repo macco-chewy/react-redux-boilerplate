@@ -1,9 +1,6 @@
 import request from 'utils/request';
 
-const API_URL =
-  process.env.REACT_APP_STAGE === 'prod'
-    ? 'https://api.gotdp.aws.zstz.net/v1'
-    : 'https://api.dev.gotdp.aws.zstz.net/v1';
+const API_URL = '';
 
 export const USER = 'user';
 
