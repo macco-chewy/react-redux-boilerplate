@@ -36,10 +36,10 @@ export const config = new ZSConfigurationManager(
   {
     amplify: {
       Auth: {
-        region: process.env.COGNITO_REGION,
-        userPoolId: process.env.COGNITO_USER_POOL_ID,
-        userPoolWebClientId: process.env.COGNITO_CLIENT_ID,
-        identityPoolId: process.env.COGNITO_IDENTITY_POOL_ID,
+        region: process.env.REACT_APP_COGNITO_REGION,
+        userPoolId: process.env.REACT_APP_COGNITO_USER_POOL_ID,
+        userPoolWebClientId: process.env.REACT_APP_COGNITO_CLIENT_ID,
+        identityPoolId: process.env.REACT_APP_COGNITO_IDENTITY_POOL_ID,
       },
       // API: {
       //   endpoints: [

@@ -12,7 +12,8 @@ import App from 'apps/Default';
 
 // configure Amplify
 async function loadApp() {
-  Amplify.configure(await config.get('amplify'));
+  const amplifyConfig = await config.get('amplify');
+  Amplify.configure(amplifyConfig);
 
   ReactDOM.render(
     <Authenticator>
