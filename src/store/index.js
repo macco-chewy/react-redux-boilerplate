@@ -3,17 +3,12 @@ import thunkMiddleware from 'redux-thunk';
 import { createLogger } from 'redux-logger';
 import { createBrowserHistory } from 'history';
 import { routerMiddleware } from 'connected-react-router';
-import { ZSConfigurationManager } from 'zs-common/dist/classes';
 
 import createRootReducer from 'reducers';
 
 const loggerMiddleware = createLogger();
 
 const initialState = {};
-
-// exports
-export const history = createBrowserHistory();
-
 export default function configureReduxStore(preloadedState) {
   // eslint-disable-next-line
   const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -30,29 +25,6 @@ export default function configureReduxStore(preloadedState) {
   );
 }
 
+// exports
+export const history = createBrowserHistory();
 export const store = configureReduxStore(initialState);
-
-export const config = new ZSConfigurationManager(
-  {
-    amplify: {
-      Auth: {
-        region: process.env.REACT_APP_COGNITO_REGION,
-        userPoolId: process.env.REACT_APP_COGNITO_USER_POOL_ID,
-        userPoolWebClientId: process.env.REACT_APP_COGNITO_CLIENT_ID,
-        identityPoolId: process.env.REACT_APP_COGNITO_IDENTITY_POOL_ID,
-      },
-      // API: {
-      //   endpoints: [
-      //     {
-      //       name: 'consumer_api',
-      //       endpoint: ENV.AWS_API_GATEWAY_ENDPOINT,
-      //       key: ENV.AWS_API_GATEWAY_KEY,
-      //       region: 'us-west-2',
-      //     },
-      //   ],
-      // },
-    },
-  },
-  {},
-  0
-);
