@@ -1,0 +1,21 @@
+.sectionContainer {
+  margin-top: 32px;
+  padding: 0 24px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: '600';
+}
+
+.formContainer {
+  margin-top: 24px;
+  align-items: 'center';
+  justify-content: 'center';
+}
+
+.errorMessage {
+  color: '#FF0000';
+  font-size: 16px;
+  font-weight: 'bold';
+}

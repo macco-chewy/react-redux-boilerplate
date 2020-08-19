@@ -16,6 +16,7 @@ module.exports = {
           view: './src/view',
           apps: './src/view/apps',
           components: './src/view/components',
+          containers: './src/view/containers',
           layouts: './src/view/layouts',
           pages: './src/view/pages',
         },
