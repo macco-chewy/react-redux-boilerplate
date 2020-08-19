@@ -7,6 +7,8 @@ module.exports = {
       options: {
         aliases: {
           actions: './src/actions',
+          classes: './src/classes',
+          config: './src/config',
           img: './src/img',
           libs: './src/libs',
           reducers: './src/reducers',
