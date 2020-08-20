@@ -1,1 +1,1 @@
-// export { getRandomNumber, getRandomInt } from 'zs-common/dist/utils';
+export { getRandomNumber, getRandomInt } from 'zs-common/dist/utils';
