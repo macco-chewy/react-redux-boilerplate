@@ -31,7 +31,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "deploy:dev": "npm run build && aws s3 sync build/ s3://<bucket_name>",
+    "deploy:prod": "npm run build && aws s3 sync build/ s3://<bucket_name>"
   },
   "eslintConfig": {
     "extends": "react-app"
